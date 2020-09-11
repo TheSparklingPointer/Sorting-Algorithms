@@ -12,3 +12,10 @@ class Solution(object):
                     nums[i] = nums[i+1]
                     nums[i+1] = temp
         return nums
+
+#----------------------------------------------test method----------------------------------------------------
+"""
+array = [2,7,4,2]
+sorted_array = Solution().sortArray(array)
+print(sorted_array)
+"""
