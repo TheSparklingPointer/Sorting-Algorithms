@@ -1,0 +1,14 @@
+class Solution(object):
+    def sortArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        arrayLength = len(nums)
+        for numOfComparisons in range(arrayLength-1, 0, -1):
+            for i in range(0, numOfComparisons):
+                if nums[i] > nums[i+1]:
+                    temp = nums[i]
+                    nums[i] = nums[i+1]
+                    nums[i+1] = temp
+        return nums
